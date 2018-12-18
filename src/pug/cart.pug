@@ -1,0 +1,43 @@
+doctype html
+html(lang='RU-ru')
+    head
+        meta(charset='UTF-8')
+        title Корзина
+        link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
+        link(rel='stylesheet', href='assets/fonts/Circe/font.css')
+        link(rel='stylesheet', href='assets/css/style.css')
+    body
+        include parts/_mixins.pug
+        include parts/_header.pug
+        +page_title('Корзина')
+        
+        main.row.row-cart
+            .container.container-cart
+                .cart-page-subtitle
+                    p Ваш заказ:
+                .cart-prods
+                    +cart_prod('1.jpg')
+                    +cart_prod('2.jpg')
+                    +cart_prod('3.jpg')
+                .cart-total
+                    p.cart-total_p1 
+                        | Всего выбрано: 
+                        span.cart-total__qty-value 3 
+                        | товара
+                    p.cart-total_p2
+                        | Общая сумма: 
+                        span.cart-total__summ-value 1050 
+                        | р.
+                    
+                
+    
+        include parts/_pagination.pug
+        
+        include parts/_footer.pug
+    
+                    
+    script(src='assets/libs/jquery/jquery-1.8.2.min.js')
+    script(src='assets/libs/mobile-detect/mobile-detect.min.js')
+    script(src='assets/js/responsive.js')
+    script(src='assets/js/main.js')
+    

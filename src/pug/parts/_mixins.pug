@@ -1,0 +1,132 @@
+//mixin article_item(title, image, src, ago, excerpt)
+mixin page_title(title)
+    .row.row-page-title
+        .container.page-title
+            h3= title
+        
+mixin shop_nav_item(title)
+    li
+        a.btn.btn-trans(href="#")= title
+
+mixin team_item(img)
+    .team-item
+        .photo-wrpr
+            img.photo(src=''+img, alt='')
+        .name
+            span.name-2 Фамилия
+            span.name-1 Имя
+            span.name-3 Отчество
+        .links
+            a.sn.sn-fb(href='#')
+            a.sn.sn-inst(href='#')
+        
+mixin prod(image)
+    .prod
+        .prod__img-wrpr
+            img.prod__img(src=''+image, alt='')
+            span.prod__photo-bg
+            .hover
+                a.hover-to-cart(href='#')
+        .prod__price
+            p 170 Р.
+        .prod__name
+            p Черная смородина
+        .prod__name-sub
+            p (каждый день)
+        .prod__desc
+            p
+                | Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.
+        
+        
+mixin gallery_item(img1, img2)
+    .gallery_item
+        a(href='#')
+            img(src=''+img1, alt='')
+        a(href='#')
+            img(src=''+img2, alt='')
+
+mixin shop_product_item(image)
+    .product-mini.pm.grid-view
+        //.product-mini.pm.list-view
+        .pm__photo-wrpr
+            img(src=""+image)
+        .pm__info
+            .pm__name
+                p 
+                | Черная смородина
+            .pm__name-sub
+                p 
+                    | (каждый день)
+            .pm__desc_list
+                p
+                | Начинка: сливочно-творожный крем с курдом из черной смородины 
+                br 
+                | Декор: итальянская меренга, ягода.
+            .pm__acts
+                .pm__price
+                    p
+                        | 170
+                        span.sign
+                            | Р.
+                a(href="#").pm__into-cart
+                    span
+                        | Добавить 
+                        br
+                        |в корзину
+                    i
+        .pm__desc_grid
+            p
+                | Начинка: сливочно-творожный крем с курдом из черной смородины 
+                br 
+                | Декор: итальянская меренга, ягода.
+                
+                
+mixin master_class(image, name, desc)
+    .master_class.mc
+        .mc__photo-wrpr
+            img(src="/images/master-class/"+image)
+        .mc__name
+            p= name
+        .mc__desc
+            p= desc
+            
+mixin cart_prod(image)
+    .cart_prod.cp
+        button.cp__remove
+        .cp__photo-wrpr
+            img(src="/images/cart/"+image)
+        .cp__cnt
+            .cp__name
+                .cp__name-1
+                    p Черная смородина
+                .cp__name-2
+                    p (каждый день)
+            .cp__price
+                p 170 р. шт.
+            .cp__qty-and-total
+                .cp__qty
+                    .cp__qty-title
+                        p Количество
+                    .qty-controls
+                        button.qty-control.decrement
+                        input.qty-input(type="text", value="3")
+                        button.qty-control.increment
+                .cp__total
+                    .cp__total-title
+                        p Общая стоимость
+                    .cp__total-value
+                        p 510 р.
+        
+        
+            
+
+
+mixin pagination()
+    .pagination
+        a(href="#").pagination__prev
+        ul.pagination-ul
+            li: a(href="#") 1
+            li.active: a(href="#") 2
+            li: a(href="#") 3
+            li: a(href="#") 4
+        a(href="#").pagination__next

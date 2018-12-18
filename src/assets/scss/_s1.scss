@@ -1,0 +1,182 @@
+.s1{
+    @media (max-width: 1900px){
+        background-size: 40%;
+    }
+    &__container{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        //justify-content: flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+        z-index: 10;
+        position: relative;
+    }
+    &__header{
+        //max-width: 375px;
+        width: 375px;
+        text-align: right;
+        margin-left: auto;
+        @media (min-height: 850px) { margin-top: 25px; }
+        @media (min-height: 900px) { margin-top: 50px; }
+        @media (min-height: 950px) { margin-top: 75px; }
+        //@media (min-height: 1000px) { margin-top: 100px; }
+    }
+    
+    &__cart-contacts{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: $c-pink-3;
+        
+        margin-top: 25px;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    &__contacts{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+    }
+    &__phone{
+        font-size: 1.5em;
+    }
+    &__call{}
+    
+    &__cart{
+        width: 44px;
+        height: 44px;
+        margin-left: 15px;
+        background: url('../img/icon-cart-1.png') no-repeat;
+        
+    }
+    
+    &__shop-mc{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        margin-top: 25px;
+        a{
+            width: 165px;
+            margin-bottom: 0.75em;
+        }
+    }
+    
+    &__offer-desc{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        color: $c-pink-3;
+        
+        margin-top: 10px;
+    }
+    &__offer{
+        font-size: 2.25em;
+        line-height: 1em;
+    }
+    &__desc{
+        font-size: 1.15em;
+        margin-top: 0.5em;
+    }
+    &__hz{
+        margin-top: 10px;
+    }
+    &__cnt{
+        flex-grow: 1;
+        max-height: 300px;
+        background-color: $c-pink-2;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        
+        @media (min-height: 800px) { max-height: 350px; }
+        @media (min-height: 850px) { max-height: 400px; }
+        @media (min-height: 900px) { max-height: 420px; }
+        @media (min-height: 1000px) { 
+            font-size: 1.15em;
+            max-height: 480px; 
+        }
+        
+        
+        &>*{
+            z-index: 10;
+        }
+        
+        &:after{
+            content: '';
+            background: $c-pink-2;
+            position: absolute;
+            height: 100%;
+            width: calc(50vw - 585px);
+            top: 0;
+            right: calc( 585px - 50vw);
+        }
+    }
+}
+
+#texture-0{
+    position: absolute;
+    right: 0;    
+    top: 0;
+    z-index: 1;
+    width: calc(50vw - 585px);
+    max-width: 780px;
+    min-width: 450px;
+} 
+#texture-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+} 
+#candy-1{
+    position: absolute;
+    top: -80px;
+    left: -100px;
+}
+#logo-bli{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-right: calc( 585px - 50vw );
+    top: 0;
+    max-width: 210px;
+    width: calc( 50vw - 585px );
+    transform: translateY(-105%);
+    
+}
+#logo-ssbon{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-right: calc( 585px - 50vw );
+    top: 2%;
+    max-width: 210px;
+    width: calc( 50vw - 585px );
+}

@@ -1,0 +1,15 @@
+.s8{
+    background: url('../img/bg-s8.png') no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    padding-top: 40px;
+    @media (min-height: 880px) {
+        padding-top: 80px;
+    }
+    @media (min-height: 950px) {
+        padding-top: 130px;
+    }
+    &__container{}
+    &__title{}
+    
+}

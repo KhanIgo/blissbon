@@ -1,0 +1,29 @@
+.s5{
+    
+    &__container{
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        height: auto !important;
+    }
+}
+#blissbon-big{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    bottom: 0;
+    transform: translateY(100%);
+}
+#candy-5{
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    transform: translateY(100%);
+    //transform: scaleY(-100%);
+    z-index: 6;
+    @media (min-width: 1600px) {
+        left: 200px;
+    }
+}

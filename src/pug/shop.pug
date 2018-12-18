@@ -1,0 +1,57 @@
+doctype html
+html(lang='RU-ru')
+    head
+        meta(charset='UTF-8')
+        title Магазин
+        link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
+        link(rel='stylesheet', href='assets/fonts/Circe/font.css')
+        link(rel='stylesheet', href='assets/css/style.css')
+    body
+        include parts/_mixins.pug
+        include parts/_header.pug
+        +page_title('Магазин готовых товаров')
+        
+        main.shop.row
+            .container.shop__container
+                .shop__header
+                    .nav
+                        ul
+                            +shop_nav_item('Все товары')
+                            +shop_nav_item('Вид 1')
+                            +shop_nav_item('Вид 2')
+                            +shop_nav_item('Вид 3')
+                    .shop__view-toggle
+                        a.view-grid.js-switch-view.active(href="#") 1
+                        a.view-list.js-switch-view(href="#") 2    
+                    
+                .shop__products
+                    +shop_product_item('images/prod-photo-1.png')
+                    +shop_product_item('images/prod-photo-2.png')
+                    +shop_product_item('images/prod-photo-3.png')
+                    +shop_product_item('images/prod-photo-4.png')
+                    
+                    +shop_product_item('images/prod-photo-1.png')
+                    +shop_product_item('images/prod-photo-2.png')
+                    +shop_product_item('images/prod-photo-3.png')
+                    +shop_product_item('images/prod-photo-4.png')
+                    
+                    +shop_product_item('images/prod-photo-1.png')
+                    +shop_product_item('images/prod-photo-2.png')
+                    +shop_product_item('images/prod-photo-3.png')
+                    +shop_product_item('images/prod-photo-4.png')
+                    
+                    +shop_product_item('images/prod-photo-1.png')
+                    +shop_product_item('images/prod-photo-2.png')
+                    +shop_product_item('images/prod-photo-3.png')
+                    +shop_product_item('images/prod-photo-4.png')
+    
+        include parts/_pagination.pug
+        
+        include parts/_footer.pug
+    
+                    
+    script(src='assets/libs/jquery/jquery-1.8.2.min.js')
+    script(src='assets/libs/mobile-detect/mobile-detect.min.js')
+    script(src='assets/js/responsive.js')
+    script(src='assets/js/main.js')
+    script(src='assets/js/shop.js')

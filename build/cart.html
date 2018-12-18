@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="assets/libs/hamburger/hamburgers.css">
+    <link rel="stylesheet" href="assets/fonts/Circe/font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!--mixin article_item(title, image, src, ago, excerpt)-->
+    <header class="header row">
+      <div class="container header__container"><a class="header__logo-link" href="#"><img src="images/logo-common.png"></a>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Мастер-классы</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions"><a class="action-call" href="#">+7 924 225 67 70</a><a class="header__cart-btn" href="#"> </a><a class="btn btn-pink-dark question-btn" href="#">Задать вопрос</a></div>
+      </div>
+    </header>
+        <div class="row row-page-title">
+          <div class="container page-title">
+            <h3>Корзина</h3>
+          </div>
+        </div>
+    <main class="row row-cart">
+      <div class="container container-cart">
+        <div class="cart-page-subtitle">
+          <p>Ваш заказ:</p>
+        </div>
+        <div class="cart-prods">
+              <div class="cart_prod cp">
+                <button class="cp__remove"></button>
+                <div class="cp__photo-wrpr"><img src="/images/cart/1.jpg"></div>
+                <div class="cp__cnt">
+                  <div class="cp__name">
+                    <div class="cp__name-1">
+                      <p>Черная смородина</p>
+                    </div>
+                    <div class="cp__name-2">
+                      <p>(каждый день)</p>
+                    </div>
+                  </div>
+                  <div class="cp__price">
+                    <p>170 р. шт.</p>
+                  </div>
+                  <div class="cp__qty-and-total">
+                    <div class="cp__qty">
+                      <div class="cp__qty-title">
+                        <p>Количество</p>
+                      </div>
+                      <div class="qty-controls">
+                        <button class="qty-control decrement"></button>
+                        <input class="qty-input" type="text" value="3">
+                        <button class="qty-control increment"></button>
+                      </div>
+                    </div>
+                    <div class="cp__total">
+                      <div class="cp__total-title">
+                        <p>Общая стоимость</p>
+                      </div>
+                      <div class="cp__total-value">
+                        <p>510 р.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart_prod cp">
+                <button class="cp__remove"></button>
+                <div class="cp__photo-wrpr"><img src="/images/cart/2.jpg"></div>
+                <div class="cp__cnt">
+                  <div class="cp__name">
+                    <div class="cp__name-1">
+                      <p>Черная смородина</p>
+                    </div>
+                    <div class="cp__name-2">
+                      <p>(каждый день)</p>
+                    </div>
+                  </div>
+                  <div class="cp__price">
+                    <p>170 р. шт.</p>
+                  </div>
+                  <div class="cp__qty-and-total">
+                    <div class="cp__qty">
+                      <div class="cp__qty-title">
+                        <p>Количество</p>
+                      </div>
+                      <div class="qty-controls">
+                        <button class="qty-control decrement"></button>
+                        <input class="qty-input" type="text" value="3">
+                        <button class="qty-control increment"></button>
+                      </div>
+                    </div>
+                    <div class="cp__total">
+                      <div class="cp__total-title">
+                        <p>Общая стоимость</p>
+                      </div>
+                      <div class="cp__total-value">
+                        <p>510 р.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart_prod cp">
+                <button class="cp__remove"></button>
+                <div class="cp__photo-wrpr"><img src="/images/cart/3.jpg"></div>
+                <div class="cp__cnt">
+                  <div class="cp__name">
+                    <div class="cp__name-1">
+                      <p>Черная смородина</p>
+                    </div>
+                    <div class="cp__name-2">
+                      <p>(каждый день)</p>
+                    </div>
+                  </div>
+                  <div class="cp__price">
+                    <p>170 р. шт.</p>
+                  </div>
+                  <div class="cp__qty-and-total">
+                    <div class="cp__qty">
+                      <div class="cp__qty-title">
+                        <p>Количество</p>
+                      </div>
+                      <div class="qty-controls">
+                        <button class="qty-control decrement"></button>
+                        <input class="qty-input" type="text" value="3">
+                        <button class="qty-control increment"></button>
+                      </div>
+                    </div>
+                    <div class="cp__total">
+                      <div class="cp__total-title">
+                        <p>Общая стоимость</p>
+                      </div>
+                      <div class="cp__total-value">
+                        <p>510 р.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="cart-total">
+          <p class="cart-total_p1">
+             Всего выбрано: <span class="cart-total__qty-value">3 </span>товара</p>
+          <p class="cart-total_p2">Общая сумма: <span class="cart-total__summ-value">1050 </span>р.</p>
+        </div>
+      </div>
+    </main>
+    <div class="row pager__row">
+      <div class="container pager__container">
+            <div class="pagination"><a class="pagination__prev" href="#"></a>
+              <ul class="pagination-ul">
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+              </ul><a class="pagination__next" href="#"></a>
+            </div>
+      </div>
+    </div>
+    <section class="screen row footer f">
+      <div class="container f__container">
+        <div class="f__logo"><a href="#"><img src="/images/logo.png" alt=""></a></div>
+        <div class="f__nav">
+          <ul>
+            <li><a href="#">ОФОРМИТЬ ЗАКАЗ</a></li>
+            <li><a href="#">Мастер-классы</a></li>
+            <li><a href="#">Магазин товаров</a></li>
+            <li><a href="#">Собрать свой набор</a></li>
+          </ul>
+        </div>
+        <div class="f__contacts"><a class="email" href="#">vspishka.eclair@gmail.com</a><a class="phone" href="#">+7 924 225 67 70</a></div>
+        <div class="f__social"><a class="sn sn-big sn-big-fb" href="#"></a><a class="sn sn-big sn-big-inst" href="#"></a></div>
+        <div class="f__address">
+          <p>Мы находимся по адресу г. Владивосток, Светланская 33/2 в Старом дворике ГУМа</p>
+          <p class="f__p2">Не знаете как добраться, посмотрите на карте</p>
+          <p class="f__p3"><a class="btn btn-trans" href="#">Открыть карту</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="assets/libs/jquery/jquery-1.8.2.min.js"></script>
+  <script src="assets/libs/mobile-detect/mobile-detect.min.js"></script>
+  <script src="assets/js/responsive.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>

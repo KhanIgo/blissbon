@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+/* line 3, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  /* line 21, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+  .hamburger:hover {
+    opacity: 0.7; }
+
+/* line 31, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+/* line 71, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  /* line 43, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  /* line 56, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  /* line 62, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+  .hamburger-inner::before {
+    top: -10px; }
+  /* line 66, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+  .hamburger-inner::after {
+    bottom: -10px; }
+  /* line 77, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+  .hamburger-inner.white {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    /* line 43, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+    .hamburger-inner.white, .hamburger-inner.white::before, .hamburger-inner.white::after {
+      width: 40px;
+      height: 4px;
+      background-color: "#fff";
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    /* line 56, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+    .hamburger-inner.white::before, .hamburger-inner.white::after {
+      content: "";
+      display: block; }
+    /* line 62, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+    .hamburger-inner.white::before {
+      top: -10px; }
+    /* line 66, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/_base.scss */
+    .hamburger-inner.white::after {
+      bottom: -10px; }
+
+/*
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: $hamburger-layer-height / -2;
+
+  &,
+  &::before,
+  &::after {
+    width: $hamburger-layer-width;
+    height: $hamburger-layer-height;
+    background-color: $hamburger-layer-color;
+    border-radius: $hamburger-layer-border-radius;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+  }
+
+  &::after {
+    bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+  }
+}
+*/
+/*
+@import "types/3dx";
+@import "types/3dx-r";
+@import "types/3dy";
+@import "types/3dy-r";
+@import "types/3dxy";
+@import "types/3dxy-r";
+@import "types/arrow";
+@import "types/arrow-r";
+@import "types/arrowalt";
+@import "types/arrowalt-r";
+@import "types/arrowturn";
+@import "types/arrowturn-r";
+@import "types/boring";
+@import "types/collapse";
+@import "types/collapse-r";
+*/
+/*
+   * Elastic
+   */
+/* line 6, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic.scss */
+.hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  /* line 11, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic.scss */
+  .hamburger--elastic .hamburger-inner::before {
+    top: 10px;
+    transition: opacity 0.125s 0.275s ease; }
+  /* line 16, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic.scss */
+  .hamburger--elastic .hamburger-inner::after {
+    top: 20px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+/* line 23, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic.scss */
+.hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s; }
+  /* line 29, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic.scss */
+  .hamburger--elastic.is-active .hamburger-inner::before {
+    transition-delay: 0s;
+    opacity: 0; }
+  /* line 34, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic.scss */
+  .hamburger--elastic.is-active .hamburger-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-270deg);
+    transition-delay: 0.075s; }
+
+/*
+   * Elastic Reverse
+   */
+/* line 6, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic-r.scss */
+.hamburger--elastic-r .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  /* line 11, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic-r.scss */
+  .hamburger--elastic-r .hamburger-inner::before {
+    top: 10px;
+    transition: opacity 0.125s 0.275s ease; }
+  /* line 16, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic-r.scss */
+  .hamburger--elastic-r .hamburger-inner::after {
+    top: 20px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+/* line 23, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic-r.scss */
+.hamburger--elastic-r.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(-135deg);
+  transition-delay: 0.075s; }
+  /* line 29, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic-r.scss */
+  .hamburger--elastic-r.is-active .hamburger-inner::before {
+    transition-delay: 0s;
+    opacity: 0; }
+  /* line 34, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_elastic-r.scss */
+  .hamburger--elastic-r.is-active .hamburger-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(270deg);
+    transition-delay: 0.075s; }
+
+/*
+   * Stand
+   */
+/* line 6, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand.scss */
+.hamburger--stand .hamburger-inner {
+  transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear; }
+  /* line 10, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand.scss */
+  .hamburger--stand .hamburger-inner::before {
+    transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  /* line 15, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand.scss */
+  .hamburger--stand .hamburger-inner::after {
+    transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+/* line 22, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand.scss */
+.hamburger--stand.is-active .hamburger-inner {
+  transform: rotate(90deg);
+  background-color: transparent;
+  transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear; }
+  /* line 29, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand.scss */
+  .hamburger--stand.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  /* line 36, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand.scss */
+  .hamburger--stand.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(45deg);
+    transition: bottom 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*
+   * Stand Reverse
+   */
+/* line 6, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand-r.scss */
+.hamburger--stand-r .hamburger-inner {
+  transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear; }
+  /* line 10, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand-r.scss */
+  .hamburger--stand-r .hamburger-inner::before {
+    transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  /* line 15, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand-r.scss */
+  .hamburger--stand-r .hamburger-inner::after {
+    transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+/* line 22, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand-r.scss */
+.hamburger--stand-r.is-active .hamburger-inner {
+  transform: rotate(-90deg);
+  background-color: transparent;
+  transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear; }
+  /* line 29, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand-r.scss */
+  .hamburger--stand-r.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  /* line 36, /Users/khanigo/Documents/clouds/Cloud Mail.Ru/Документы работа/blissbon/markup/assets/libs/hamburger/types/_stand-r.scss */
+  .hamburger--stand-r.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(45deg);
+    transition: bottom 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*
+@import "types/emphatic";
+@import "types/emphatic-r";
+@import "types/minus";
+@import "types/slider";
+@import "types/slider-r";
+@import "types/spin";
+@import "types/spin-r";
+@import "types/spring";
+@import "types/spring-r";
+
+@import "types/squeeze";
+@import "types/vortex";
+@import "types/vortex-r";
+*/
+
+/*# sourceMappingURL=hamburgers.css.map */

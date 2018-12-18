@@ -1,0 +1,52 @@
+.s9{
+    background-color: $c-pink-2;    
+    background-image: url('../img/bg-s9.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    padding-top: 40px;
+    @media (min-height: 820px){
+        padding-top: 60px;
+    }
+    @media (min-height: 890px){
+        padding-top: 100px;
+    }
+    
+    
+    &__container{}
+    &__title{}   
+    &__cnt{
+        margin-top: 70px;
+        width: 100%;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        @media (min-height: 820px) {
+            margin-top: 130px;
+        }
+        @media (min-height: 950px) {
+            margin-top: 170px;
+        }
+    }
+    &__slider-wrpr{
+        
+    }
+    &__slider{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 1050px;
+    }
+    &__slider-item{
+        width: 340px;
+        height: 480px;
+        background-color: #b78ea2;
+    }
+}

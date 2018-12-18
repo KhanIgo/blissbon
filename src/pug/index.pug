@@ -1,0 +1,36 @@
+doctype html
+html(lang='RU-ru')
+    head
+        meta(charset='UTF-8')
+        title Document
+        link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
+        link(rel='stylesheet', href='assets/fonts/Circe/font.css')
+        link(rel='stylesheet', href='assets/css/style.css')
+    body.body-landing
+    
+        //
+            .hamburger.hamburger--stand.js-hamburger
+                .hamburger-box
+                    .hamburger-inner
+        include parts/_mixins.pug
+        include parts/_section-1.pug
+        include parts/_section-2.pug
+        include parts/_section-3.pug
+        include parts/_section-4.pug
+        include parts/_section-5.pug
+        include parts/_section-6.pug
+        include parts/_section-7.pug
+        include parts/_section-8.pug
+        include parts/_section-9.pug
+        
+        include parts/_footer.pug
+        //
+            .screen row.s
+                .container.s__container
+                    .s-title.s__title
+        script(src='assets/libs/jquery/jquery-3.2.1.min.js')
+        script(src='assets/libs/mobile-detect/mobile-detect.min.js')
+        script(src='assets/js/responsive.js')
+        script(src='assets/js/main.js')
+        script.
+            jQuery(function($) {});
