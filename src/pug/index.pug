@@ -1,3 +1,5 @@
+include parts/_bemto.pug
+include parts/_mixins.pug
 doctype html
 html(lang='RU-ru')
     head
@@ -12,7 +14,9 @@ html(lang='RU-ru')
             .hamburger.hamburger--stand.js-hamburger
                 .hamburger-box
                     .hamburger-inner
-        include parts/_mixins.pug
+        
+        include parts/_modal.pug
+        
         include parts/_section-1.pug
         include parts/_section-2.pug
         include parts/_section-3.pug
@@ -24,6 +28,7 @@ html(lang='RU-ru')
         include parts/_section-9.pug
         
         include parts/_footer.pug
+        
         //
             .screen row.s
                 .container.s__container

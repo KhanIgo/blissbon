@@ -1,3 +1,72 @@
+.ui{
+    &-modal{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 200;
+        transition: 500ms;
+        left: 0;
+        top: 0;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        &.active{
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        &__layout{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: $c-pink-3;
+            opacity: 0.85;
+        }
+        &__close-modal{
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            z-index: 1;
+        }
+        &__cnt{
+            position: relative;
+            z-index: 2;
+            
+            &--inner-form{
+                width: 100%;
+                max-width: 550px;
+                background: white;
+                padding: 60px;
+                border-radius: 20px;
+                overflow: hidden;
+                span.wpcf7-form-control-wrap{
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .wpcf7-submit{
+                    margin-top: 20px;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1em;
+                }
+                form{
+                    >p>br{ display: none; }
+                }
+            }
+        }
+    }
+}
+
 .btn{
     display: inline-block;
     text-decoration: none;

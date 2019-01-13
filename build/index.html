@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<!--mixin article_item(title, image, src, ago, excerpt)--><!DOCTYPE html>
 <html lang="RU-ru">
   <head>
     <meta charset="UTF-8">
@@ -12,8 +13,35 @@
     .hamburger.hamburger--stand.js-hamburger
         .hamburger-box
             .hamburger-inner
+    
     -->
-    <!--mixin article_item(title, image, src, ago, excerpt)-->
+    <div class="ui-modal active">
+      <div class="ui-modal__layout">
+      </div>
+      <div class="ui-modal__close-modal js-close-modal">
+      </div>
+      <div class="ui-modal__cnt ui-modal__cnt--inner-form">
+        <div class="modal-cnt">
+          <div class="modal-cnt__close-modal js-close-modal">
+          </div>
+          <div class="modal-cnt__title">
+            <p>ЗАКАЗАТЬ ЗВОНОК</p>
+          </div>
+          <div class="modal-cnt__desc">
+            <p>Оставьте заявку и мы свяжемся <br> с вами в ближайщее время</p>
+          </div>
+          <div class="modal-cnt__form-wrpr">
+            <form>
+              <p><span class="wpcf7-form-control-wrap uname">
+                  <input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input" type="text" name="uname" value="" placeholder="Ваше имя"></span><br><span class="wpcf7-form-control-wrap uphone">
+                  <input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input" type="text" name="uphone" value="" placeholder="Номер телефона"></span><br>
+                <button class="wpcf7-form-control wpcf7-submit btn btn-pink" type="submit" value="Отправить">Отправить  </button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="screen row s1"><img id="texture-0" src="images/texture-0.png">
       <div class="container s1__container">
         <div class="s1__header">
@@ -33,74 +61,74 @@
       <div class="container s2__container">
         <h3 class="s-title s2__title">Популярные товары</h3>
         <div class="prod__slider">
-              <div class="prod">
-                <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-1.png" alt=""><span class="prod__photo-bg"></span>
-                  <div class="hover"><a class="hover-to-cart" href="#"></a></div>
-                </div>
-                <div class="prod__price">
-                  <p>170 Р.</p>
-                </div>
-                <div class="prod__name">
-                  <p>Черная смородина</p>
-                </div>
-                <div class="prod__name-sub">
-                  <p>(каждый день)</p>
-                </div>
-                <div class="prod__desc">
-                  <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
-                </div>
-              </div>
-              <div class="prod">
-                <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-2.png" alt=""><span class="prod__photo-bg"></span>
-                  <div class="hover"><a class="hover-to-cart" href="#"></a></div>
-                </div>
-                <div class="prod__price">
-                  <p>170 Р.</p>
-                </div>
-                <div class="prod__name">
-                  <p>Черная смородина</p>
-                </div>
-                <div class="prod__name-sub">
-                  <p>(каждый день)</p>
-                </div>
-                <div class="prod__desc">
-                  <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
-                </div>
-              </div>
-              <div class="prod">
-                <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-3.png" alt=""><span class="prod__photo-bg"></span>
-                  <div class="hover"><a class="hover-to-cart" href="#"></a></div>
-                </div>
-                <div class="prod__price">
-                  <p>170 Р.</p>
-                </div>
-                <div class="prod__name">
-                  <p>Черная смородина</p>
-                </div>
-                <div class="prod__name-sub">
-                  <p>(каждый день)</p>
-                </div>
-                <div class="prod__desc">
-                  <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
-                </div>
-              </div>
-              <div class="prod">
-                <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-4.png" alt=""><span class="prod__photo-bg"></span>
-                  <div class="hover"><a class="hover-to-cart" href="#"></a></div>
-                </div>
-                <div class="prod__price">
-                  <p>170 Р.</p>
-                </div>
-                <div class="prod__name">
-                  <p>Черная смородина</p>
-                </div>
-                <div class="prod__name-sub">
-                  <p>(каждый день)</p>
-                </div>
-                <div class="prod__desc">
-                  <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
-                </div>
-              </div>
+          <div class="prod">
+            <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-1.png" alt=""/><span class="prod__photo-bg"></span>
+              <div class="hover"><a class="hover-to-cart" href="#"></a></div>
+            </div>
+            <div class="prod__price">
+              <p>170 Р.</p>
+            </div>
+            <div class="prod__name">
+              <p>Черная смородина</p>
+            </div>
+            <div class="prod__name-sub">
+              <p>(каждый день)</p>
+            </div>
+            <div class="prod__desc">
+              <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-2.png" alt=""/><span class="prod__photo-bg"></span>
+              <div class="hover"><a class="hover-to-cart" href="#"></a></div>
+            </div>
+            <div class="prod__price">
+              <p>170 Р.</p>
+            </div>
+            <div class="prod__name">
+              <p>Черная смородина</p>
+            </div>
+            <div class="prod__name-sub">
+              <p>(каждый день)</p>
+            </div>
+            <div class="prod__desc">
+              <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-3.png" alt=""/><span class="prod__photo-bg"></span>
+              <div class="hover"><a class="hover-to-cart" href="#"></a></div>
+            </div>
+            <div class="prod__price">
+              <p>170 Р.</p>
+            </div>
+            <div class="prod__name">
+              <p>Черная смородина</p>
+            </div>
+            <div class="prod__name-sub">
+              <p>(каждый день)</p>
+            </div>
+            <div class="prod__desc">
+              <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-4.png" alt=""/><span class="prod__photo-bg"></span>
+              <div class="hover"><a class="hover-to-cart" href="#"></a></div>
+            </div>
+            <div class="prod__price">
+              <p>170 Р.</p>
+            </div>
+            <div class="prod__name">
+              <p>Черная смородина</p>
+            </div>
+            <div class="prod__name-sub">
+              <p>(каждый день)</p>
+            </div>
+            <div class="prod__desc">
+              <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
+            </div>
+          </div>
         </div><img id="candy-7" src="images/candy-7.png">
       </div>
     </section>
@@ -161,11 +189,11 @@
         </div>
         <div class="gallery-wrpr">
           <div class="gallery">
-                <div class="gallery_item"><a href="#"><img src="/images/gallery/1.jpg" alt=""></a><a href="#"><img src="/images/gallery/2.jpg" alt=""></a></div>
-                <div class="gallery_item"><a href="#"><img src="/images/gallery/3.jpg" alt=""></a><a href="#"><img src="/images/gallery/4.jpg" alt=""></a></div>
-                <div class="gallery_item"><a href="#"><img src="/images/gallery/5.jpg" alt=""></a><a href="#"><img src="/images/gallery/6.jpg" alt=""></a></div>
-                <div class="gallery_item"><a href="#"><img src="/images/gallery/7.jpg" alt=""></a><a href="#"><img src="/images/gallery/8.jpg" alt=""></a></div>
-                <div class="gallery_item"><a href="#"><img src="/images/gallery/9.jpg" alt=""></a><a href="#"><img src="/images/gallery/10.jpg" alt=""></a></div>
+            <div class="gallery_item"><a href="#"><img src="/images/gallery/1.jpg" alt=""/></a><a href="#"><img src="/images/gallery/2.jpg" alt=""/></a></div>
+            <div class="gallery_item"><a href="#"><img src="/images/gallery/3.jpg" alt=""/></a><a href="#"><img src="/images/gallery/4.jpg" alt=""/></a></div>
+            <div class="gallery_item"><a href="#"><img src="/images/gallery/5.jpg" alt=""/></a><a href="#"><img src="/images/gallery/6.jpg" alt=""/></a></div>
+            <div class="gallery_item"><a href="#"><img src="/images/gallery/7.jpg" alt=""/></a><a href="#"><img src="/images/gallery/8.jpg" alt=""/></a></div>
+            <div class="gallery_item"><a href="#"><img src="/images/gallery/9.jpg" alt=""/></a><a href="#"><img src="/images/gallery/10.jpg" alt=""/></a></div>
           </div>
         </div><img id="candy-5" src="images/candy-5.png"><img id="blissbon-big" src="images/logo-big-pink.png">
       </div>
@@ -177,74 +205,74 @@
       <div class="container s6__container">
         <div class="s6-prod__slider-wrpr">
           <div class="prod__slider">
-                <div class="prod">
-                  <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-1.png" alt=""><span class="prod__photo-bg"></span>
-                    <div class="hover"><a class="hover-to-cart" href="#"></a></div>
-                  </div>
-                  <div class="prod__price">
-                    <p>170 Р.</p>
-                  </div>
-                  <div class="prod__name">
-                    <p>Черная смородина</p>
-                  </div>
-                  <div class="prod__name-sub">
-                    <p>(каждый день)</p>
-                  </div>
-                  <div class="prod__desc">
-                    <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
-                  </div>
-                </div>
-                <div class="prod">
-                  <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-2.png" alt=""><span class="prod__photo-bg"></span>
-                    <div class="hover"><a class="hover-to-cart" href="#"></a></div>
-                  </div>
-                  <div class="prod__price">
-                    <p>170 Р.</p>
-                  </div>
-                  <div class="prod__name">
-                    <p>Черная смородина</p>
-                  </div>
-                  <div class="prod__name-sub">
-                    <p>(каждый день)</p>
-                  </div>
-                  <div class="prod__desc">
-                    <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
-                  </div>
-                </div>
-                <div class="prod">
-                  <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-3.png" alt=""><span class="prod__photo-bg"></span>
-                    <div class="hover"><a class="hover-to-cart" href="#"></a></div>
-                  </div>
-                  <div class="prod__price">
-                    <p>170 Р.</p>
-                  </div>
-                  <div class="prod__name">
-                    <p>Черная смородина</p>
-                  </div>
-                  <div class="prod__name-sub">
-                    <p>(каждый день)</p>
-                  </div>
-                  <div class="prod__desc">
-                    <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
-                  </div>
-                </div>
-                <div class="prod">
-                  <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-4.png" alt=""><span class="prod__photo-bg"></span>
-                    <div class="hover"><a class="hover-to-cart" href="#"></a></div>
-                  </div>
-                  <div class="prod__price">
-                    <p>170 Р.</p>
-                  </div>
-                  <div class="prod__name">
-                    <p>Черная смородина</p>
-                  </div>
-                  <div class="prod__name-sub">
-                    <p>(каждый день)</p>
-                  </div>
-                  <div class="prod__desc">
-                    <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
-                  </div>
-                </div>
+            <div class="prod">
+              <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-1.png" alt=""/><span class="prod__photo-bg"></span>
+                <div class="hover"><a class="hover-to-cart" href="#"></a></div>
+              </div>
+              <div class="prod__price">
+                <p>170 Р.</p>
+              </div>
+              <div class="prod__name">
+                <p>Черная смородина</p>
+              </div>
+              <div class="prod__name-sub">
+                <p>(каждый день)</p>
+              </div>
+              <div class="prod__desc">
+                <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
+              </div>
+            </div>
+            <div class="prod">
+              <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-2.png" alt=""/><span class="prod__photo-bg"></span>
+                <div class="hover"><a class="hover-to-cart" href="#"></a></div>
+              </div>
+              <div class="prod__price">
+                <p>170 Р.</p>
+              </div>
+              <div class="prod__name">
+                <p>Черная смородина</p>
+              </div>
+              <div class="prod__name-sub">
+                <p>(каждый день)</p>
+              </div>
+              <div class="prod__desc">
+                <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
+              </div>
+            </div>
+            <div class="prod">
+              <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-3.png" alt=""/><span class="prod__photo-bg"></span>
+                <div class="hover"><a class="hover-to-cart" href="#"></a></div>
+              </div>
+              <div class="prod__price">
+                <p>170 Р.</p>
+              </div>
+              <div class="prod__name">
+                <p>Черная смородина</p>
+              </div>
+              <div class="prod__name-sub">
+                <p>(каждый день)</p>
+              </div>
+              <div class="prod__desc">
+                <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
+              </div>
+            </div>
+            <div class="prod">
+              <div class="prod__img-wrpr"><img class="prod__img" src="images/prod-photo-4.png" alt=""/><span class="prod__photo-bg"></span>
+                <div class="hover"><a class="hover-to-cart" href="#"></a></div>
+              </div>
+              <div class="prod__price">
+                <p>170 Р.</p>
+              </div>
+              <div class="prod__name">
+                <p>Черная смородина</p>
+              </div>
+              <div class="prod__name-sub">
+                <p>(каждый день)</p>
+              </div>
+              <div class="prod__desc">
+                <p>Начинка: сливочно-творожный крем с курдом из черной смородины Декор: итальянская меренга, ягода.</p>
+              </div>
+            </div>
           </div>
           <div class="s6_into-shop"><a class="btn btn-white" href="#">В магазин</a></div>
         </div>
@@ -282,26 +310,26 @@
       <div class="container s8__container">
         <h3 class="s-title s8__title">Наша команда</h3>
         <div class="team-wrpr">
-              <div class="team-item">
-                <div class="photo-wrpr"><img class="photo" src="/images/team-1.png" alt=""></div>
-                <div class="name"><span class="name-2">Фамилия</span><span class="name-1">Имя</span><span class="name-3">Отчество</span></div>
-                <div class="links"><a class="sn sn-fb" href="#"></a><a class="sn sn-inst" href="#"></a></div>
-              </div>
-              <div class="team-item">
-                <div class="photo-wrpr"><img class="photo" src="/images/team-2.png" alt=""></div>
-                <div class="name"><span class="name-2">Фамилия</span><span class="name-1">Имя</span><span class="name-3">Отчество</span></div>
-                <div class="links"><a class="sn sn-fb" href="#"></a><a class="sn sn-inst" href="#"></a></div>
-              </div>
-              <div class="team-item">
-                <div class="photo-wrpr"><img class="photo" src="/images/team-1.png" alt=""></div>
-                <div class="name"><span class="name-2">Фамилия</span><span class="name-1">Имя</span><span class="name-3">Отчество</span></div>
-                <div class="links"><a class="sn sn-fb" href="#"></a><a class="sn sn-inst" href="#"></a></div>
-              </div>
-              <div class="team-item">
-                <div class="photo-wrpr"><img class="photo" src="/images/team-2.png" alt=""></div>
-                <div class="name"><span class="name-2">Фамилия</span><span class="name-1">Имя</span><span class="name-3">Отчество</span></div>
-                <div class="links"><a class="sn sn-fb" href="#"></a><a class="sn sn-inst" href="#"></a></div>
-              </div>
+          <div class="team-item">
+            <div class="photo-wrpr"><img class="photo" src="/images/team-1.png" alt=""/></div>
+            <div class="name"><span class="name-2">Фамилия</span><span class="name-1">Имя</span><span class="name-3">Отчество</span></div>
+            <div class="links"><a class="sn sn-fb" href="#"></a><a class="sn sn-inst" href="#"></a></div>
+          </div>
+          <div class="team-item">
+            <div class="photo-wrpr"><img class="photo" src="/images/team-2.png" alt=""/></div>
+            <div class="name"><span class="name-2">Фамилия</span><span class="name-1">Имя</span><span class="name-3">Отчество</span></div>
+            <div class="links"><a class="sn sn-fb" href="#"></a><a class="sn sn-inst" href="#"></a></div>
+          </div>
+          <div class="team-item">
+            <div class="photo-wrpr"><img class="photo" src="/images/team-1.png" alt=""/></div>
+            <div class="name"><span class="name-2">Фамилия</span><span class="name-1">Имя</span><span class="name-3">Отчество</span></div>
+            <div class="links"><a class="sn sn-fb" href="#"></a><a class="sn sn-inst" href="#"></a></div>
+          </div>
+          <div class="team-item">
+            <div class="photo-wrpr"><img class="photo" src="/images/team-2.png" alt=""/></div>
+            <div class="name"><span class="name-2">Фамилия</span><span class="name-1">Имя</span><span class="name-3">Отчество</span></div>
+            <div class="links"><a class="sn sn-fb" href="#"></a><a class="sn sn-inst" href="#"></a></div>
+          </div>
         </div>
       </div>
     </section>

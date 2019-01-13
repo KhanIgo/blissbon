@@ -1,0 +1,24 @@
++b.ui-modal.active
+    +e.layout
+    +e.close-modal.js-close-modal
+    
+    +e.cnt.--inner-form
+        +b.modal-cnt
+            +e.close-modal.js-close-modal
+            +e.title
+                p ЗАКАЗАТЬ ЗВОНОК
+            +e.desc
+                p Оставьте заявку и мы свяжемся #[br] с вами в ближайщее время
+            +e.form-wrpr
+                form
+                    p
+                        span.wpcf7-form-control-wrap.uname
+                            input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.input(type="text", name="uname", value="", placeholder="Ваше имя") 
+                        br
+                        span.wpcf7-form-control-wrap.uphone
+                            input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.input(type="text", name="uphone", value="", placeholder="Номер телефона")
+                        br
+                        
+                        button.wpcf7-form-control.wpcf7-submit.btn.btn-pink(type="submit", value="Отправить") Отправить  
+                    
+        

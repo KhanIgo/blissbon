@@ -1,0 +1,38 @@
+.modal-cnt{
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &__close-modal{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 5;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('../img/icon-close-modal.png') no-repeat;
+        background-position: center;
+    }
+    
+    form{
+        &>p{
+            display: block;
+            width: 100%;
+        }
+    }
+    &__title{
+        font-size: 1.5em;
+        text-transform: uppercase;
+        line-height: 1em;
+    }
+    &__desc{
+        margin-top: 2em;
+        line-height: 1em;
+    }
+    &__form-wrpr{
+        margin-top: 35px;
+    }
+}
